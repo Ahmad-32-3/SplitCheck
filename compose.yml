@@ -1,0 +1,15 @@
+# Named Compose services from DESIGN. Agent used in-process stores because
+# the Docker daemon was not running.
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: skew
+      POSTGRES_USER: skew
+      POSTGRES_PASSWORD: skew
+    ports:
+      - "5432:5432"
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"

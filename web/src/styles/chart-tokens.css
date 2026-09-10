@@ -1,0 +1,17 @@
+:root {
+  --chart-offline: var(--steel);
+  --chart-online: var(--amber);
+  --chart-catch: var(--good);
+  --chart-miss: var(--bad);
+
+  --chart-1: var(--chart-catch);
+  --chart-2: var(--chart-online);
+  --chart-3: var(--chart-offline);
+  --chart-4: var(--chart-miss);
+
+  --chart-background: var(--bg-sunk);
+  --chart-foreground: var(--fg-hi);
+  --chart-foreground-muted: var(--fg-low);
+  --chart-label: var(--fg-low);
+  --chart-grid: var(--line-hairline);
+}
